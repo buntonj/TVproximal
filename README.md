@@ -6,7 +6,7 @@ $$ \mathrm{prox}(y) = \underset{x\in\mathbb{R}^n}{\text{argmin}}~\frac{1}{2}\Ver
 where $\Vert\cdot\Vert_{TV,p}$ denotes the $
 \ell-p$ [total-variation map](https://en.wikipedia.org/wiki/Total_variation) in one or two variables for $p\in\{0,1\}$.  More explicitly, for one dimensional variables $x\in\mathbb{R}^n$:
 
-$$ \Vert x\Vert_{TV,p} = \Vert Dx\Vert_p = \left(\sum_{i=1}^n-1 \vert x_{i+1}-x_i\vert^p\right)^{\frac{1}{p}}.$$
+$$ \Vert x\Vert_{TV,p} = \Vert Dx\Vert_p = \left(\sum_{i=1}^{n-1} \vert x_{i+1}-x_i\vert^p\right)^{\frac{1}{p}}.$$
 
 or if $x\in\mathbb{R}^{m\times n}$, the anisotropic total variation becomes:
 
